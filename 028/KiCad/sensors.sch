@@ -1,0 +1,573 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+1V8 #PWR?
+U 1 1 60AD9C53
+P 5150 1150
+AR Path="/60ABF4E6/60AD9C53" Ref="#PWR?"  Part="1" 
+AR Path="/60AD9C53" Ref="#PWR0151"  Part="1" 
+AR Path="/60C0D6AA/60AD9C53" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 1000 50  0001 C CNN
+F 1 "+1V8" V 5165 1278 50  0000 L CNN
+F 2 "" H 5150 1150 50  0001 C CNN
+F 3 "" H 5150 1150 50  0001 C CNN
+	1    5150 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 1250 5100 1250
+Wire Wire Line
+	5100 1250 5100 1150
+Wire Wire Line
+	5100 1150 5150 1150
+Wire Wire Line
+	5050 1150 5100 1150
+Connection ~ 5100 1150
+Wire Wire Line
+	4050 1750 3950 1750
+Wire Wire Line
+	4050 1550 3950 1550
+Text Label 3950 1550 2    50   ~ 0
+SCL_1V8
+Text Label 3950 1750 2    50   ~ 0
+SDA_1V8
+$Comp
+L power:GND #PWR?
+U 1 1 60AD9C62
+P 5150 2050
+AR Path="/60ABF4E6/60AD9C62" Ref="#PWR?"  Part="1" 
+AR Path="/60AD9C62" Ref="#PWR0152"  Part="1" 
+AR Path="/60C0D6AA/60AD9C62" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 1800 50  0001 C CNN
+F 1 "GND" H 5155 1877 50  0000 C CNN
+F 2 "" H 5150 2050 50  0001 C CNN
+F 3 "" H 5150 2050 50  0001 C CNN
+	1    5150 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 2050 5100 2050
+$Comp
+L Device:C C?
+U 1 1 60AD9C6A
+P 5200 1600
+AR Path="/60ABF4E6/60AD9C6A" Ref="C?"  Part="1" 
+AR Path="/60AD9C6A" Ref="C18"  Part="1" 
+AR Path="/60C0D6AA/60AD9C6A" Ref="C?"  Part="1" 
+F 0 "C?" H 5315 1554 50  0000 L CNN
+F 1 "100n" H 5315 1645 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5238 1450 50  0001 C CNN
+F 3 "~" H 5200 1600 50  0001 C CNN
+	1    5200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1250 5100 1250
+Connection ~ 5100 1250
+Wire Wire Line
+	5200 1250 5200 1450
+Wire Wire Line
+	5200 1750 5200 1900
+Wire Wire Line
+	5200 1900 5100 1900
+Wire Wire Line
+	5100 1900 5100 2050
+Connection ~ 5100 2050
+Wire Wire Line
+	5100 2050 5050 2050
+$Comp
+L power:+1V8 #PWR?
+U 1 1 60AD9C78
+P 4000 1400
+AR Path="/60ABF4E6/60AD9C78" Ref="#PWR?"  Part="1" 
+AR Path="/60AD9C78" Ref="#PWR0153"  Part="1" 
+AR Path="/60C0D6AA/60AD9C78" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 1250 50  0001 C CNN
+F 1 "+1V8" V 4015 1528 50  0000 L CNN
+F 2 "" H 4000 1400 50  0001 C CNN
+F 3 "" H 4000 1400 50  0001 C CNN
+	1    4000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1400 4000 1450
+Wire Wire Line
+	4000 1450 4050 1450
+$Comp
+L power:GND #PWR?
+U 1 1 60AD9C80
+P 4000 1900
+AR Path="/60ABF4E6/60AD9C80" Ref="#PWR?"  Part="1" 
+AR Path="/60AD9C80" Ref="#PWR0154"  Part="1" 
+AR Path="/60C0D6AA/60AD9C80" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 1650 50  0001 C CNN
+F 1 "GND" H 4005 1727 50  0000 C CNN
+F 2 "" H 4000 1900 50  0001 C CNN
+F 3 "" H 4000 1900 50  0001 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1900 4000 1850
+Wire Wire Line
+	4000 1850 4050 1850
+$Comp
+L Regulator_Linear:MIC5504-1.8YM5 U?
+U 1 1 60AED531
+P 2150 1000
+AR Path="/60ABF4E6/60AED531" Ref="U?"  Part="1" 
+AR Path="/60AED531" Ref="U11"  Part="1" 
+AR Path="/60C0D6AA/60AED531" Ref="U?"  Part="1" 
+F 0 "U?" H 2150 1367 50  0000 C CNN
+F 1 "MIC5504-1.8YM5" H 2150 1276 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2150 600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 1900 1250 50  0001 C CNN
+	1    2150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 60AED53D
+P 2800 900
+AR Path="/60ABF4E6/60AED53D" Ref="#PWR?"  Part="1" 
+AR Path="/60AED53D" Ref="#PWR0155"  Part="1" 
+AR Path="/60C0D6AA/60AED53D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2800 750 50  0001 C CNN
+F 1 "+1V8" V 2815 1028 50  0000 L CNN
+F 2 "" H 2800 900 50  0001 C CNN
+F 3 "" H 2800 900 50  0001 C CNN
+	1    2800 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60AED543
+P 2150 1350
+AR Path="/60ABF4E6/60AED543" Ref="#PWR?"  Part="1" 
+AR Path="/60AED543" Ref="#PWR0156"  Part="1" 
+AR Path="/60C0D6AA/60AED543" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 1100 50  0001 C CNN
+F 1 "GND" H 2155 1177 50  0000 C CNN
+F 2 "" H 2150 1350 50  0001 C CNN
+F 3 "" H 2150 1350 50  0001 C CNN
+	1    2150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NVT2002DP_118:NVT2002DP,118 IC?
+U 1 1 60AED54F
+P 1350 2150
+AR Path="/60ABF4E6/60AED54F" Ref="IC?"  Part="1" 
+AR Path="/60AED54F" Ref="IC1"  Part="1" 
+AR Path="/60C0D6AA/60AED54F" Ref="IC?"  Part="1" 
+F 0 "IC?" H 1950 2415 50  0000 C CNN
+F 1 "NVT2002DP,118" H 1950 2324 50  0000 C CNN
+F 2 "NVT2002DP_118:SOP65P490X110-8N" H 2400 2250 50  0001 L CNN
+F 3 "http://www.nxp.com/docs/en/data-sheet/NVT2001_NVT2002.pdf" H 2400 2150 50  0001 L CNN
+F 4 "Translation - Voltage Levels Interface IC" H 2400 2050 50  0001 L CNN "Description"
+F 5 "1.1" H 2400 1950 50  0001 L CNN "Height"
+F 6 "771-NVT2002DP118" H 2400 1850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/NXP-Semiconductors/NVT2002DP118/?qs=htEP9ZFZyENRaE6OF%252BxM8A%3D%3D" H 2400 1750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "NXP" H 2400 1650 50  0001 L CNN "Manufacturer_Name"
+F 9 "NVT2002DP,118" H 2400 1550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 60AED555
+P 1050 1650
+AR Path="/60ABF4E6/60AED555" Ref="#PWR?"  Part="1" 
+AR Path="/60AED555" Ref="#PWR0157"  Part="1" 
+AR Path="/60C0D6AA/60AED555" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1050 1500 50  0001 C CNN
+F 1 "+1V8" H 1065 1823 50  0000 C CNN
+F 2 "" H 1050 1650 50  0001 C CNN
+F 3 "" H 1050 1650 50  0001 C CNN
+	1    1050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60AED561
+P 2450 1750
+AR Path="/60ABF4E6/60AED561" Ref="R?"  Part="1" 
+AR Path="/60AED561" Ref="R47"  Part="1" 
+AR Path="/60C0D6AA/60AED561" Ref="R?"  Part="1" 
+F 0 "R?" H 2520 1796 50  0000 L CNN
+F 1 "200k" H 2520 1705 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2380 1750 50  0001 C CNN
+F 3 "~" H 2450 1750 50  0001 C CNN
+	1    2450 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60AED567
+P 2450 1550
+AR Path="/60ABF4E6/60AED567" Ref="C?"  Part="1" 
+AR Path="/60AED567" Ref="C21"  Part="1" 
+AR Path="/60C0D6AA/60AED567" Ref="C?"  Part="1" 
+F 0 "C?" H 2565 1504 50  0000 L CNN
+F 1 "100n" H 2565 1595 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2488 1400 50  0001 C CNN
+F 3 "~" H 2450 1550 50  0001 C CNN
+	1    2450 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 1750 2250 1750
+Wire Wire Line
+	2250 1750 2250 1550
+Wire Wire Line
+	2250 1550 2300 1550
+Connection ~ 2250 1750
+Wire Wire Line
+	2250 1750 2300 1750
+Wire Wire Line
+	2600 1550 2650 1550
+Wire Wire Line
+	2650 1550 2650 1750
+Wire Wire Line
+	2650 1750 2600 1750
+Wire Wire Line
+	2650 1750 2650 2150
+Wire Wire Line
+	2650 2250 2550 2250
+Connection ~ 2650 1750
+Wire Wire Line
+	2550 2150 2650 2150
+Connection ~ 2650 2150
+Wire Wire Line
+	2650 2150 2650 2250
+$Comp
+L Device:R R?
+U 1 1 60AED587
+P 1250 1900
+AR Path="/60ABF4E6/60AED587" Ref="R?"  Part="1" 
+AR Path="/60AED587" Ref="R39"  Part="1" 
+AR Path="/60C0D6AA/60AED587" Ref="R?"  Part="1" 
+F 0 "R?" H 1320 1946 50  0000 L CNN
+F 1 "4.7k" H 1320 1855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1180 1900 50  0001 C CNN
+F 3 "~" H 1250 1900 50  0001 C CNN
+	1    1250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60AED58D
+P 1150 1900
+AR Path="/60ABF4E6/60AED58D" Ref="R?"  Part="1" 
+AR Path="/60AED58D" Ref="R38"  Part="1" 
+AR Path="/60C0D6AA/60AED58D" Ref="R?"  Part="1" 
+F 0 "R?" H 1080 1946 50  0000 R CNN
+F 1 "4.7k" H 1080 1855 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1080 1900 50  0001 C CNN
+F 3 "~" H 1150 1900 50  0001 C CNN
+	1    1150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2250 1050 2250
+Wire Wire Line
+	1050 2250 1050 1700
+$Comp
+L power:GND #PWR?
+U 1 1 60AED595
+P 1350 1650
+AR Path="/60ABF4E6/60AED595" Ref="#PWR?"  Part="1" 
+AR Path="/60AED595" Ref="#PWR0158"  Part="1" 
+AR Path="/60C0D6AA/60AED595" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1350 1400 50  0001 C CNN
+F 1 "GND" H 1355 1477 50  0000 C CNN
+F 2 "" H 1350 1650 50  0001 C CNN
+F 3 "" H 1350 1650 50  0001 C CNN
+	1    1350 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 2150 1350 1650
+Wire Wire Line
+	1150 1750 1150 1700
+Wire Wire Line
+	1150 1700 1050 1700
+Connection ~ 1050 1700
+Wire Wire Line
+	1050 1700 1050 1650
+Wire Wire Line
+	1150 1700 1250 1700
+Wire Wire Line
+	1250 1700 1250 1750
+Connection ~ 1150 1700
+Wire Wire Line
+	1350 2350 1150 2350
+Wire Wire Line
+	1350 2450 1250 2450
+Wire Wire Line
+	1150 2050 1150 2350
+Connection ~ 1150 2350
+Wire Wire Line
+	1150 2350 1100 2350
+Wire Wire Line
+	1250 2050 1250 2450
+Connection ~ 1250 2450
+Wire Wire Line
+	1250 2450 1100 2450
+Text Label 1100 2350 2    50   ~ 0
+SCL_1V8
+Text Label 1100 2450 2    50   ~ 0
+SDA_1V8
+Wire Wire Line
+	1300 900  1500 900 
+Wire Wire Line
+	2550 900  2650 900 
+$Comp
+L Device:C C?
+U 1 1 60AED5C4
+P 2650 1100
+AR Path="/60ABF4E6/60AED5C4" Ref="C?"  Part="1" 
+AR Path="/60AED5C4" Ref="C22"  Part="1" 
+AR Path="/60C0D6AA/60AED5C4" Ref="C?"  Part="1" 
+F 0 "C?" H 2765 1054 50  0000 L CNN
+F 1 "1u" H 2765 1145 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2688 950 50  0001 C CNN
+F 3 "~" H 2650 1100 50  0001 C CNN
+	1    2650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60AED5CA
+P 1500 1100
+AR Path="/60ABF4E6/60AED5CA" Ref="C?"  Part="1" 
+AR Path="/60AED5CA" Ref="C19"  Part="1" 
+AR Path="/60C0D6AA/60AED5CA" Ref="C?"  Part="1" 
+F 0 "C?" H 1386 1146 50  0000 R CNN
+F 1 "1u" H 1386 1055 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1538 950 50  0001 C CNN
+F 3 "~" H 1500 1100 50  0001 C CNN
+	1    1500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60AED5D0
+P 2650 1300
+AR Path="/60ABF4E6/60AED5D0" Ref="#PWR?"  Part="1" 
+AR Path="/60AED5D0" Ref="#PWR0159"  Part="1" 
+AR Path="/60C0D6AA/60AED5D0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2650 1050 50  0001 C CNN
+F 1 "GND" H 2655 1127 50  0000 C CNN
+F 2 "" H 2650 1300 50  0001 C CNN
+F 3 "" H 2650 1300 50  0001 C CNN
+	1    2650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 950  1500 900 
+Connection ~ 1500 900 
+Wire Wire Line
+	1500 900  1650 900 
+Wire Wire Line
+	2650 950  2650 900 
+Connection ~ 2650 900 
+Wire Wire Line
+	2650 900  2800 900 
+Wire Wire Line
+	2650 1300 2650 1250
+Wire Wire Line
+	2150 1350 2150 1300
+Wire Notes Line
+	600  600  3350 600 
+Wire Notes Line
+	3350 600  3350 2600
+Wire Notes Line
+	3350 2600 600  2600
+Wire Notes Line
+	600  2600 600  600 
+Text Notes 650  700  0    50   ~ 0
+1.8V + Level Shifter I2C
+$Comp
+L power:GND #PWR?
+U 1 1 60AED5E3
+P 1500 1350
+AR Path="/60ABF4E6/60AED5E3" Ref="#PWR?"  Part="1" 
+AR Path="/60AED5E3" Ref="#PWR0160"  Part="1" 
+AR Path="/60C0D6AA/60AED5E3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 1100 50  0001 C CNN
+F 1 "GND" H 1505 1177 50  0000 C CNN
+F 2 "" H 1500 1350 50  0001 C CNN
+F 3 "" H 1500 1350 50  0001 C CNN
+	1    1500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1350 1500 1250
+Wire Wire Line
+	1650 1100 1650 900 
+Wire Wire Line
+	1650 1100 1750 1100
+Connection ~ 1650 900 
+Wire Wire Line
+	1650 900  1750 900 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60B0EFB6
+P 1300 900
+AR Path="/607DC62D/60B0EFB6" Ref="#PWR?"  Part="1" 
+AR Path="/60B0EFB6" Ref="#PWR0161"  Part="1" 
+AR Path="/6087857C/60B0EFB6" Ref="#PWR?"  Part="1" 
+AR Path="/60C0D6AA/60B0EFB6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1300 750 50  0001 C CNN
+F 1 "+3.3V" V 1315 1028 50  0000 L CNN
+F 2 "" H 1300 900 50  0001 C CNN
+F 3 "" H 1300 900 50  0001 C CNN
+	1    1300 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60B0FE25
+P 2200 1750
+AR Path="/607DC62D/60B0FE25" Ref="#PWR?"  Part="1" 
+AR Path="/60B0FE25" Ref="#PWR0162"  Part="1" 
+AR Path="/6087857C/60B0FE25" Ref="#PWR?"  Part="1" 
+AR Path="/60C0D6AA/60B0FE25" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2200 1600 50  0001 C CNN
+F 1 "+3.3V" V 2215 1878 50  0000 L CNN
+F 2 "" H 2200 1750 50  0001 C CNN
+F 3 "" H 2200 1750 50  0001 C CNN
+	1    2200 1750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2850 2350 2    50   Input ~ 0
+SCL
+Text GLabel 2850 2450 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	2550 2350 2850 2350
+Wire Wire Line
+	2550 2450 2850 2450
+$Comp
+L Sensor_Humidity:HDC1080 U?
+U 1 1 60E57AAE
+P 6550 1600
+AR Path="/60E314D1/60E57AAE" Ref="U?"  Part="1" 
+AR Path="/60E57AAE" Ref="U9"  Part="1" 
+AR Path="/60C0D6AA/60E57AAE" Ref="U?"  Part="1" 
+F 0 "U?" H 6207 1646 50  0000 R CNN
+F 1 "HDC1080" H 6207 1555 50  0000 R CNN
+F 2 "Package_SON:Texas_PWSON-N6" H 6500 1350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 6150 1850 50  0001 C CNN
+F 4 "C82227" H 6550 1600 50  0001 C CNN "LCSC"
+	1    6550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E57AB4
+P 6450 1200
+AR Path="/60E314D1/60E57AB4" Ref="#PWR?"  Part="1" 
+AR Path="/60E57AB4" Ref="#PWR0170"  Part="1" 
+AR Path="/60C0D6AA/60E57AB4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 1050 50  0001 C CNN
+F 1 "+3.3V" H 6465 1373 50  0000 C CNN
+F 2 "" H 6450 1200 50  0001 C CNN
+F 3 "" H 6450 1200 50  0001 C CNN
+	1    6450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E57ABA
+P 6450 2000
+AR Path="/60E314D1/60E57ABA" Ref="#PWR?"  Part="1" 
+AR Path="/60E57ABA" Ref="#PWR0171"  Part="1" 
+AR Path="/60C0D6AA/60E57ABA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 1750 50  0001 C CNN
+F 1 "GND" H 6455 1827 50  0000 C CNN
+F 2 "" H 6450 2000 50  0001 C CNN
+F 3 "" H 6450 2000 50  0001 C CNN
+	1    6450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1500 6950 1500
+Wire Wire Line
+	6850 1600 6950 1600
+Text GLabel 6950 1500 2    50   Input ~ 0
+SCL
+Text GLabel 6950 1600 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	6450 2000 6450 1900
+Wire Wire Line
+	6450 1300 6450 1250
+$Comp
+L Device:C C?
+U 1 1 62996B8A
+P 6700 1250
+AR Path="/607DC62D/62996B8A" Ref="C?"  Part="1" 
+AR Path="/62996B8A" Ref="C20"  Part="1" 
+AR Path="/6087857C/62996B8A" Ref="C?"  Part="1" 
+AR Path="/60C0D6AA/62996B8A" Ref="C?"  Part="1" 
+F 0 "C?" V 6448 1250 50  0000 C CNN
+F 1 "100n" V 6539 1250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6738 1100 50  0001 C CNN
+F 3 "~" H 6700 1250 50  0001 C CNN
+	1    6700 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62997701
+P 6950 1250
+AR Path="/60E314D1/62997701" Ref="#PWR?"  Part="1" 
+AR Path="/62997701" Ref="#PWR0218"  Part="1" 
+AR Path="/60C0D6AA/62997701" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6950 1000 50  0001 C CNN
+F 1 "GND" H 6955 1077 50  0000 C CNN
+F 2 "" H 6950 1250 50  0001 C CNN
+F 3 "" H 6950 1250 50  0001 C CNN
+	1    6950 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6450 1250
+Wire Wire Line
+	6450 1250 6450 1200
+Wire Wire Line
+	6450 1250 6550 1250
+Wire Wire Line
+	6850 1250 6950 1250
+$Comp
+L BMP388:BMP388 U?
+U 1 1 60AD9C4D
+P 4550 1650
+AR Path="/60ABF4E6/60AD9C4D" Ref="U?"  Part="1" 
+AR Path="/60AD9C4D" Ref="U8"  Part="1" 
+AR Path="/60C0D6AA/60AD9C4D" Ref="U?"  Part="1" 
+F 0 "U?" H 4550 2417 50  0000 C CNN
+F 1 "BMP388" H 4550 2326 50  0000 C CNN
+F 2 "BMP388:PQFN50P200X200X80-10N" H 4550 1650 50  0001 L BNN
+F 3 "" H 4550 1650 50  0001 L BNN
+F 4 "BOSCH" H 4550 1650 50  0001 L BNN "MANUFACTURER"
+F 5 "IPC 7351B" H 4550 1650 50  0001 L BNN "STANDARD"
+F 6 "1.1" H 4550 1650 50  0001 L BNN "PARTREV"
+	1    4550 1650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

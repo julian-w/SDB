@@ -1,0 +1,501 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 250-402_000-012:5V5A U?
+U 1 1 60D94686
+P 5300 3050
+F 0 "U?" H 5300 3775 50  0000 C CNN
+F 1 "5V5A" H 5300 3684 50  0000 C CNN
+F 2 "1043:5V5A" H 5300 3050 50  0001 C CNN
+F 3 "" H 5300 3050 50  0001 C CNN
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 60D95C43
+P 4850 2750
+F 0 "#PWR?" H 4850 2600 50  0001 C CNN
+F 1 "+15V" V 4865 2878 50  0000 L CNN
+F 2 "" H 4850 2750 50  0001 C CNN
+F 3 "" H 4850 2750 50  0001 C CNN
+	1    4850 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D9660E
+P 4850 2850
+AR Path="/5D78A622/60D9660E" Ref="#PWR?"  Part="1" 
+AR Path="/5C5B93EE/60D9660E" Ref="#PWR?"  Part="1" 
+AR Path="/60821925/60D9660E" Ref="#PWR?"  Part="1" 
+AR Path="/6083BF33/60D9660E" Ref="#PWR?"  Part="1" 
+AR Path="/60D9660E" Ref="#PWR0167"  Part="1" 
+AR Path="/61143A89/60D9660E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 2600 50  0001 C CNN
+F 1 "GND" H 4850 2700 50  0000 C CNN
+F 2 "" H 4850 2850 50  0000 C CNN
+F 3 "" H 4850 2850 50  0000 C CNN
+	1    4850 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D96B9D
+P 5750 2950
+AR Path="/5D78A622/60D96B9D" Ref="#PWR?"  Part="1" 
+AR Path="/5C5B93EE/60D96B9D" Ref="#PWR?"  Part="1" 
+AR Path="/60821925/60D96B9D" Ref="#PWR?"  Part="1" 
+AR Path="/6083BF33/60D96B9D" Ref="#PWR?"  Part="1" 
+AR Path="/60D96B9D" Ref="#PWR0168"  Part="1" 
+AR Path="/61143A89/60D96B9D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5750 2700 50  0001 C CNN
+F 1 "GND" H 5750 2800 50  0000 C CNN
+F 2 "" H 5750 2950 50  0000 C CNN
+F 3 "" H 5750 2950 50  0000 C CNN
+	1    5750 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60D97131
+P 5750 2650
+F 0 "#PWR?" H 5750 2500 50  0001 C CNN
+F 1 "+5V" V 5765 2778 50  0000 L CNN
+F 2 "" H 5750 2650 50  0001 C CNN
+F 3 "" H 5750 2650 50  0001 C CNN
+	1    5750 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2750 4950 2750
+Wire Wire Line
+	4950 2850 4850 2850
+Wire Wire Line
+	5650 2950 5750 2950
+Wire Wire Line
+	5650 2650 5750 2650
+Wire Wire Line
+	5650 2550 5750 2550
+Text GLabel 5750 2550 2    50   Input ~ 0
+5V_EN
+$Comp
+L LED:WS2812B D?
+U 1 1 60E7F272
+P 1650 2000
+F 0 "D?" H 1994 2046 50  0000 L CNN
+F 1 "WS2812B" H 1994 1955 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 1700 1700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1750 1625 50  0001 L TNN
+	1    1650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E81539
+P 1650 2400
+AR Path="/60E314D1/60E81539" Ref="#PWR?"  Part="1" 
+AR Path="/60E81539" Ref="#PWR0172"  Part="1" 
+AR Path="/61143A89/60E81539" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1650 2150 50  0001 C CNN
+F 1 "GND" H 1655 2227 50  0000 C CNN
+F 2 "" H 1650 2400 50  0001 C CNN
+F 3 "" H 1650 2400 50  0001 C CNN
+	1    1650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E819C4
+P 1100 1650
+F 0 "#PWR?" H 1100 1500 50  0001 C CNN
+F 1 "+5V" V 1115 1778 50  0000 L CNN
+F 2 "" H 1100 1650 50  0001 C CNN
+F 3 "" H 1100 1650 50  0001 C CNN
+	1    1100 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 60E82262
+P 1400 1650
+F 0 "D?" H 1400 1433 50  0000 C CNN
+F 1 "1N4004" H 1400 1524 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMB_Handsoldering" H 1400 1650 50  0001 C CNN
+F 3 "~" H 1400 1650 50  0001 C CNN
+	1    1400 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 1650 1250 1650
+Wire Wire Line
+	1550 1650 1650 1650
+Wire Wire Line
+	1650 1650 1650 1700
+Wire Wire Line
+	1650 2400 1650 2300
+Wire Wire Line
+	1950 2000 2350 2000
+Text GLabel 2350 2000 2    50   Input ~ 0
+WS2812_OUT1
+Text GLabel 1200 2000 0    50   Input ~ 0
+WS2812_IN1
+Wire Wire Line
+	1350 2000 1200 2000
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 60EE99D2
+P 1750 1250
+F 0 "Q?" V 1999 1250 50  0000 C CNN
+F 1 "BSS138" V 2090 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1950 1175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1750 1250 50  0001 L CNN
+	1    1750 1250
+	0    1    1    0   
+$EndComp
+Text GLabel 2200 1350 2    50   Input ~ 0
+WS2812_OUT1
+$Comp
+L Device:R R?
+U 1 1 60EED41E
+P 1250 1100
+AR Path="/608AAF41/60EED41E" Ref="R?"  Part="1" 
+AR Path="/60EED41E" Ref="R29"  Part="1" 
+AR Path="/61143A89/60EED41E" Ref="R?"  Part="1" 
+F 0 "R?" V 1135 1100 50  0000 C CNN
+F 1 "10k" V 1044 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1180 1100 50  0001 C CNN
+F 3 "~" H 1250 1100 50  0001 C CNN
+	1    1250 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EEDBFE
+P 2050 1100
+AR Path="/608AAF41/60EEDBFE" Ref="R?"  Part="1" 
+AR Path="/60EEDBFE" Ref="R31"  Part="1" 
+AR Path="/61143A89/60EEDBFE" Ref="R?"  Part="1" 
+F 0 "R?" V 1935 1100 50  0000 C CNN
+F 1 "10k" V 1844 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1980 1100 50  0001 C CNN
+F 3 "~" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60EEE18A
+P 1250 850
+AR Path="/60E314D1/60EEE18A" Ref="#PWR?"  Part="1" 
+AR Path="/60EEE18A" Ref="#PWR0174"  Part="1" 
+AR Path="/61143A89/60EEE18A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1250 700 50  0001 C CNN
+F 1 "+3.3V" H 1265 1023 50  0000 C CNN
+F 2 "" H 1250 850 50  0001 C CNN
+F 3 "" H 1250 850 50  0001 C CNN
+	1    1250 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60EEE69F
+P 2050 850
+F 0 "#PWR?" H 2050 700 50  0001 C CNN
+F 1 "+5V" H 2065 1023 50  0000 C CNN
+F 2 "" H 2050 850 50  0001 C CNN
+F 3 "" H 2050 850 50  0001 C CNN
+	1    2050 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1350 2050 1350
+Wire Wire Line
+	2050 1250 2050 1350
+Connection ~ 2050 1350
+Wire Wire Line
+	2050 1350 2200 1350
+Wire Wire Line
+	2050 950  2050 850 
+Wire Wire Line
+	1250 950  1250 900 
+Wire Wire Line
+	1250 900  1750 900 
+Wire Wire Line
+	1750 900  1750 1050
+Connection ~ 1250 900 
+Wire Wire Line
+	1250 900  1250 850 
+Wire Wire Line
+	1550 1350 1250 1350
+Wire Wire Line
+	1250 1250 1250 1350
+Connection ~ 1250 1350
+Wire Wire Line
+	1250 1350 1200 1350
+Text GLabel 1200 1350 0    50   Input ~ 0
+WS2812_IN1
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 614BE43F
+P 3900 3800
+F 0 "J?" H 3818 3475 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 3818 3566 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_3-G-5,08_1x03_P5.08mm_Vertical" H 3900 3800 50  0001 C CNN
+F 3 "~" H 3900 3800 50  0001 C CNN
+	1    3900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3900 3600 3900
+Text GLabel 3750 1700 0    50   Input ~ 0
+WS2812_OUT1
+Wire Wire Line
+	3700 3800 3600 3800
+Wire Wire Line
+	3700 3700 3600 3700
+$Comp
+L power:+5V #PWR?
+U 1 1 615E7F8D
+P 3600 3700
+F 0 "#PWR?" H 3600 3550 50  0001 C CNN
+F 1 "+5V" V 3615 3828 50  0000 L CNN
+F 2 "" H 3600 3700 50  0001 C CNN
+F 3 "" H 3600 3700 50  0001 C CNN
+	1    3600 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615E9EEF
+P 3600 3800
+AR Path="/5D78A622/615E9EEF" Ref="#PWR?"  Part="1" 
+AR Path="/5C5B93EE/615E9EEF" Ref="#PWR?"  Part="1" 
+AR Path="/60821925/615E9EEF" Ref="#PWR?"  Part="1" 
+AR Path="/6083BF33/615E9EEF" Ref="#PWR?"  Part="1" 
+AR Path="/615E9EEF" Ref="#PWR0196"  Part="1" 
+AR Path="/61143A89/615E9EEF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3600 3550 50  0001 C CNN
+F 1 "GND" V 3605 3672 50  0000 R CNN
+F 2 "" H 3600 3800 50  0000 C CNN
+F 3 "" H 3600 3800 50  0000 C CNN
+	1    3600 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 618B5FD4
+P 1600 4150
+F 0 "D?" H 1944 4196 50  0000 L CNN
+F 1 "WS2812B" H 1944 4105 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 1650 3850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1700 3775 50  0001 L TNN
+	1    1600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618B5FDA
+P 1600 4550
+AR Path="/60E314D1/618B5FDA" Ref="#PWR?"  Part="1" 
+AR Path="/618B5FDA" Ref="#PWR0199"  Part="1" 
+AR Path="/61143A89/618B5FDA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 4300 50  0001 C CNN
+F 1 "GND" H 1605 4377 50  0000 C CNN
+F 2 "" H 1600 4550 50  0001 C CNN
+F 3 "" H 1600 4550 50  0001 C CNN
+	1    1600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618B5FE0
+P 1050 3800
+F 0 "#PWR?" H 1050 3650 50  0001 C CNN
+F 1 "+5V" V 1065 3928 50  0000 L CNN
+F 2 "" H 1050 3800 50  0001 C CNN
+F 3 "" H 1050 3800 50  0001 C CNN
+	1    1050 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 618B5FE6
+P 1350 3800
+F 0 "D?" H 1350 3583 50  0000 C CNN
+F 1 "1N4004" H 1350 3674 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMB_Handsoldering" H 1350 3800 50  0001 C CNN
+F 3 "~" H 1350 3800 50  0001 C CNN
+	1    1350 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 3800 1200 3800
+Wire Wire Line
+	1500 3800 1600 3800
+Wire Wire Line
+	1600 3800 1600 3850
+Wire Wire Line
+	1600 4550 1600 4450
+Wire Wire Line
+	1900 4150 2300 4150
+Text GLabel 2300 4150 2    50   Input ~ 0
+WS2812_OUT2
+Text GLabel 1150 4150 0    50   Input ~ 0
+WS2812_IN2
+Wire Wire Line
+	1300 4150 1150 4150
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 618B5FF4
+P 1700 3400
+F 0 "Q?" V 1949 3400 50  0000 C CNN
+F 1 "BSS138" V 2040 3400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1900 3325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1700 3400 50  0001 L CNN
+	1    1700 3400
+	0    1    1    0   
+$EndComp
+Text GLabel 2150 3500 2    50   Input ~ 0
+WS2812_OUT2
+$Comp
+L Device:R R?
+U 1 1 618B5FFB
+P 1200 3250
+AR Path="/608AAF41/618B5FFB" Ref="R?"  Part="1" 
+AR Path="/618B5FFB" Ref="R22"  Part="1" 
+AR Path="/61143A89/618B5FFB" Ref="R?"  Part="1" 
+F 0 "R?" V 1085 3250 50  0000 C CNN
+F 1 "10k" V 994 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1130 3250 50  0001 C CNN
+F 3 "~" H 1200 3250 50  0001 C CNN
+	1    1200 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618B6001
+P 2000 3250
+AR Path="/608AAF41/618B6001" Ref="R?"  Part="1" 
+AR Path="/618B6001" Ref="R30"  Part="1" 
+AR Path="/61143A89/618B6001" Ref="R?"  Part="1" 
+F 0 "R?" V 1885 3250 50  0000 C CNN
+F 1 "10k" V 1794 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1930 3250 50  0001 C CNN
+F 3 "~" H 2000 3250 50  0001 C CNN
+	1    2000 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618B6007
+P 1200 3000
+AR Path="/60E314D1/618B6007" Ref="#PWR?"  Part="1" 
+AR Path="/618B6007" Ref="#PWR0201"  Part="1" 
+AR Path="/61143A89/618B6007" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1200 2850 50  0001 C CNN
+F 1 "+3.3V" H 1215 3173 50  0000 C CNN
+F 2 "" H 1200 3000 50  0001 C CNN
+F 3 "" H 1200 3000 50  0001 C CNN
+	1    1200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618B600D
+P 2000 3000
+F 0 "#PWR?" H 2000 2850 50  0001 C CNN
+F 1 "+5V" H 2015 3173 50  0000 C CNN
+F 2 "" H 2000 3000 50  0001 C CNN
+F 3 "" H 2000 3000 50  0001 C CNN
+	1    2000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3500 2000 3500
+Wire Wire Line
+	2000 3400 2000 3500
+Connection ~ 2000 3500
+Wire Wire Line
+	2000 3500 2150 3500
+Wire Wire Line
+	2000 3100 2000 3000
+Wire Wire Line
+	1200 3100 1200 3050
+Wire Wire Line
+	1200 3050 1700 3050
+Wire Wire Line
+	1700 3050 1700 3200
+Connection ~ 1200 3050
+Wire Wire Line
+	1200 3050 1200 3000
+Wire Wire Line
+	1500 3500 1200 3500
+Wire Wire Line
+	1200 3400 1200 3500
+Connection ~ 1200 3500
+Wire Wire Line
+	1200 3500 1150 3500
+Text GLabel 1150 3500 0    50   Input ~ 0
+WS2812_IN2
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 618B6022
+P 4050 1600
+F 0 "J?" H 3968 1275 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 3968 1366 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_3-G-5,08_1x03_P5.08mm_Vertical" H 4050 1600 50  0001 C CNN
+F 3 "~" H 4050 1600 50  0001 C CNN
+	1    4050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1700 3750 1700
+Text GLabel 3600 3900 0    50   Input ~ 0
+WS2812_OUT2
+Wire Wire Line
+	3850 1600 3750 1600
+Wire Wire Line
+	3850 1500 3750 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 618B602C
+P 3750 1500
+F 0 "#PWR?" H 3750 1350 50  0001 C CNN
+F 1 "+5V" V 3765 1628 50  0000 L CNN
+F 2 "" H 3750 1500 50  0001 C CNN
+F 3 "" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618B6032
+P 3750 1600
+AR Path="/5D78A622/618B6032" Ref="#PWR?"  Part="1" 
+AR Path="/5C5B93EE/618B6032" Ref="#PWR?"  Part="1" 
+AR Path="/60821925/618B6032" Ref="#PWR?"  Part="1" 
+AR Path="/6083BF33/618B6032" Ref="#PWR?"  Part="1" 
+AR Path="/618B6032" Ref="#PWR0204"  Part="1" 
+AR Path="/61143A89/618B6032" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 1350 50  0001 C CNN
+F 1 "GND" V 3755 1472 50  0000 R CNN
+F 2 "" H 3750 1600 50  0000 C CNN
+F 3 "" H 3750 1600 50  0000 C CNN
+	1    3750 1600
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
