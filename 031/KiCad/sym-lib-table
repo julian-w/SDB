@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name P82B715DR)(type Legacy)(uri ${KIPRJMOD}/symbols/P82B715DR.lib)(options "")(descr ""))
+  (lib (name light-ws2812-controller-rescue)(type Legacy)(uri ${KIPRJMOD}/light-ws2812-controller-rescue.lib)(options "")(descr ""))
+)

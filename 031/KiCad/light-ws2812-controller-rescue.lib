@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# CRYSTALHC49S-adafruit
+#
+DEF CRYSTALHC49S-adafruit Q 0 40 N N 1 L N
+F0 "Q" 100 40 50 H V L BNN
+F1 "CRYSTALHC49S-adafruit" 100 -100 50 H V L BNN
+F2 "HC49_S" 30 150 20 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *HC49_S*
+$ENDFPLIST
+DRAW
+T 0 -68 -28 34 0 1 0 1 Normal 0 C C
+T 0 77 -28 34 0 1 0 2 Normal 0 C C
+P 2 1 0 0 -100 0 -40 0 N
+P 2 1 0 0 -40 70 -40 -70 N
+P 2 1 0 0 -15 -60 15 -60 N
+P 2 1 0 0 -15 60 -15 -60 N
+P 2 1 0 0 15 -60 15 60 N
+P 2 1 0 0 15 60 -15 60 N
+P 2 1 0 0 40 0 100 0 N
+P 2 1 0 0 40 70 40 -70 N
+X 1 1 -100 0 0 R 40 40 1 1 P
+X 2 2 100 0 0 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
