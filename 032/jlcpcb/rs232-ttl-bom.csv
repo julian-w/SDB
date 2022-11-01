@@ -1,0 +1,11 @@
+Comment,Designator,Footprint,LCSC
+10u,C1,Capacitors_SMD:C_1206,C13585
+10u,"C4,C10,C11",Capacitors_SMD:C_0805,C15850
+100n,"C2,C3,C5,C6,C7,C8,C9",Capacitors_SMD:C_0603,C14663
+D,D1,Diodes_SMD:D_SOD-123F,C64898
+MountingHole,"H1,H2,H3,H4",Mounting_Holes:MountingHole_3.2mm_M3,
+Conn_01x02,J1,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,
+TTL,J2,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
+RS232,J3,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
+AMS1117-3.3,U1,Package_TO_SOT_SMD:SOT-223-3_TabPin2,C6186
+MAX3232,U2,Housings_SSOP:SSOP-16_4.4x5.2mm_Pitch0.65mm,C9951

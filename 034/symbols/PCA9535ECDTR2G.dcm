@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCA9535ECDTR2G
+D 16-bit Low-Power I/O Expander for I2C Bus with Interrupt
+K
+F http://www.onsemi.com/pub/Collateral/PCA9535E-D.PDF
+$ENDCMP
+#
+#End Doc Library

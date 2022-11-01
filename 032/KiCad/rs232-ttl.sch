@@ -1,0 +1,718 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 60F8D8CB
+P 6300 3300
+AR Path="/60FD392C/60F8D8CB" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60F8D8CB" Ref="C?"  Part="1" 
+AR Path="/61159961/60F8D8CB" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60F8D8CB" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60F8D8CB" Ref="C?"  Part="1" 
+AR Path="/60F8D8CB" Ref="C8"  Part="1" 
+F 0 "C8" V 6460 3300 50  0000 C CNN
+F 1 "100n" V 6551 3300 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 6338 3150 50  0001 C CNN
+F 3 "~" H 6300 3300 50  0001 C CNN
+	1    6300 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Interface_UART:MAX3232 U?
+U 1 1 60F8D8D4
+P 5250 3400
+AR Path="/60FDBE21/6194D368/60F8D8D4" Ref="U?"  Part="1" 
+AR Path="/60FDBE21/60F8D8D4" Ref="U?"  Part="1" 
+AR Path="/60F821C4/60F8D8D4" Ref="U?"  Part="1" 
+AR Path="/60F8D8D4" Ref="U2"  Part="1" 
+F 0 "U2" H 5250 4781 50  0000 C CNN
+F 1 "MAX3232" H 5250 4690 50  0000 C CNN
+F 2 "Housings_SSOP:SSOP-16_4.4x5.2mm_Pitch0.65mm" H 5300 2350 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 5250 3500 50  0001 C CNN
+	1    5250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60F8D8DA
+P 5250 1950
+AR Path="/60FDBE21/6194D368/60F8D8DA" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D8DA" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D8DA" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D8DA" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 5250 1800 50  0001 C CNN
+F 1 "+3.3V" H 5265 2123 50  0000 C CNN
+F 2 "" H 5250 1950 50  0001 C CNN
+F 3 "" H 5250 1950 50  0001 C CNN
+	1    5250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F8D8E0
+P 5250 4650
+AR Path="/60FDBE21/6194D368/60F8D8E0" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D8E0" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D8E0" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D8E0" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 5250 4400 50  0001 C CNN
+F 1 "GND" H 5255 4477 50  0000 C CNN
+F 2 "" H 5250 4650 50  0001 C CNN
+F 3 "" H 5250 4650 50  0001 C CNN
+	1    5250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4650 5250 4600
+Wire Wire Line
+	5250 2200 5250 1950
+Wire Wire Line
+	4250 2500 4450 2500
+Wire Wire Line
+	4450 2800 4250 2800
+Wire Wire Line
+	6050 2500 6200 2500
+Wire Wire Line
+	6200 2800 6050 2800
+Wire Wire Line
+	6050 3000 6150 3000
+Wire Wire Line
+	6050 3300 6150 3300
+Wire Wire Line
+	6450 3300 6550 3300
+Wire Wire Line
+	6450 3000 6550 3000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60F8D8F0
+P 6550 3000
+AR Path="/60FDBE21/6194D368/60F8D8F0" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D8F0" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D8F0" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D8F0" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 6550 2850 50  0001 C CNN
+F 1 "+3.3V" V 6565 3128 50  0000 L CNN
+F 2 "" H 6550 3000 50  0001 C CNN
+F 3 "" H 6550 3000 50  0001 C CNN
+	1    6550 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F8D8F6
+P 6550 3300
+AR Path="/60FDBE21/6194D368/60F8D8F6" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D8F6" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D8F6" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D8F6" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 6550 3050 50  0001 C CNN
+F 1 "GND" V 6555 3172 50  0000 R CNN
+F 2 "" H 6550 3300 50  0001 C CNN
+F 3 "" H 6550 3300 50  0001 C CNN
+	1    6550 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60F8D8FE
+P 7000 1850
+AR Path="/60FDBE21/6194D368/60F8D8FE" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D8FE" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D8FE" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D8FE" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 7000 1700 50  0001 C CNN
+F 1 "+3.3V" H 7015 2023 50  0000 C CNN
+F 2 "" H 7000 1850 50  0001 C CNN
+F 3 "" H 7000 1850 50  0001 C CNN
+	1    7000 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F8D904
+P 7500 1850
+AR Path="/60FDBE21/6194D368/60F8D904" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D904" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D904" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D904" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 7500 1600 50  0001 C CNN
+F 1 "GND" H 7505 1677 50  0000 C CNN
+F 2 "" H 7500 1850 50  0001 C CNN
+F 3 "" H 7500 1850 50  0001 C CNN
+	1    7500 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 1850 7400 1850
+Wire Wire Line
+	7100 1850 7000 1850
+$Comp
+L Device:C C?
+U 1 1 60F8D90C
+P 6300 3000
+AR Path="/60FD392C/60F8D90C" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60F8D90C" Ref="C?"  Part="1" 
+AR Path="/61159961/60F8D90C" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60F8D90C" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60F8D90C" Ref="C?"  Part="1" 
+AR Path="/60F8D90C" Ref="C7"  Part="1" 
+F 0 "C7" V 6048 3000 50  0000 C CNN
+F 1 "100n" V 6139 3000 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 6338 2850 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F8D912
+P 6200 2650
+AR Path="/60FD392C/60F8D912" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60F8D912" Ref="C?"  Part="1" 
+AR Path="/61159961/60F8D912" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60F8D912" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60F8D912" Ref="C?"  Part="1" 
+AR Path="/60F8D912" Ref="C6"  Part="1" 
+F 0 "C6" H 6085 2604 50  0000 R CNN
+F 1 "100n" H 6085 2695 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H 6238 2500 50  0001 C CNN
+F 3 "~" H 6200 2650 50  0001 C CNN
+	1    6200 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F8D918
+P 4250 2650
+AR Path="/60FD392C/60F8D918" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60F8D918" Ref="C?"  Part="1" 
+AR Path="/61159961/60F8D918" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60F8D918" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60F8D918" Ref="C?"  Part="1" 
+AR Path="/60F8D918" Ref="C5"  Part="1" 
+F 0 "C5" H 4135 2604 50  0000 R CNN
+F 1 "100n" H 4135 2695 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H 4288 2500 50  0001 C CNN
+F 3 "~" H 4250 2650 50  0001 C CNN
+	1    4250 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F8D91E
+P 7250 1850
+AR Path="/60FD392C/60F8D91E" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60F8D91E" Ref="C?"  Part="1" 
+AR Path="/61159961/60F8D91E" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60F8D91E" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60F8D91E" Ref="C?"  Part="1" 
+AR Path="/60F8D91E" Ref="C9"  Part="1" 
+F 0 "C9" V 7502 1850 50  0000 C CNN
+F 1 "100n" V 7411 1850 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 7288 1700 50  0001 C CNN
+F 3 "~" H 7250 1850 50  0001 C CNN
+	1    7250 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F8D934
+P 1650 2600
+AR Path="/60FDBE21/6194D368/60F8D934" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D934" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D934" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D934" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 1650 2350 50  0001 C CNN
+F 1 "GND" V 1655 2472 50  0000 R CNN
+F 2 "" H 1650 2600 50  0001 C CNN
+F 3 "" H 1650 2600 50  0001 C CNN
+	1    1650 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 2600 1650 2600
+$Comp
+L power:+12V #PWR?
+U 1 1 60F8D949
+P 1650 2700
+AR Path="/60F821C4/60F8D949" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D949" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 1650 2550 50  0001 C CNN
+F 1 "+12V" V 1665 2828 50  0000 L CNN
+F 2 "" H 1650 2700 50  0001 C CNN
+F 3 "" H 1650 2700 50  0001 C CNN
+	1    1650 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1650 2700 1750 2700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60F8D975
+P 7000 2300
+AR Path="/60FDBE21/6194D368/60F8D975" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D975" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D975" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D975" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 7000 2150 50  0001 C CNN
+F 1 "+3.3V" H 7015 2473 50  0000 C CNN
+F 2 "" H 7000 2300 50  0001 C CNN
+F 3 "" H 7000 2300 50  0001 C CNN
+	1    7000 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 2300 7400 2300
+Wire Wire Line
+	7100 2300 7000 2300
+$Comp
+L Device:C C?
+U 1 1 60F8D97D
+P 7250 2300
+AR Path="/60FD392C/60F8D97D" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60F8D97D" Ref="C?"  Part="1" 
+AR Path="/61159961/60F8D97D" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60F8D97D" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60F8D97D" Ref="C?"  Part="1" 
+AR Path="/60F8D97D" Ref="C10"  Part="1" 
+F 0 "C10" V 7502 2300 50  0000 C CNN
+F 1 "10u" V 7411 2300 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7288 2150 50  0001 C CNN
+F 3 "~" H 7250 2300 50  0001 C CNN
+	1    7250 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F8D983
+P 7500 2300
+AR Path="/60FDBE21/6194D368/60F8D983" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D983" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D983" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D983" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 7500 2050 50  0001 C CNN
+F 1 "GND" H 7505 2127 50  0000 C CNN
+F 2 "" H 7500 2300 50  0001 C CNN
+F 3 "" H 7500 2300 50  0001 C CNN
+	1    7500 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60F8D989
+P 7000 2550
+AR Path="/60FDBE21/6194D368/60F8D989" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D989" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D989" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D989" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7000 2400 50  0001 C CNN
+F 1 "+3.3V" H 7015 2723 50  0000 C CNN
+F 2 "" H 7000 2550 50  0001 C CNN
+F 3 "" H 7000 2550 50  0001 C CNN
+	1    7000 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 2550 7400 2550
+Wire Wire Line
+	7100 2550 7000 2550
+$Comp
+L Device:C C?
+U 1 1 60F8D991
+P 7250 2550
+AR Path="/60FD392C/60F8D991" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60F8D991" Ref="C?"  Part="1" 
+AR Path="/61159961/60F8D991" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60F8D991" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60F8D991" Ref="C?"  Part="1" 
+AR Path="/60F8D991" Ref="C11"  Part="1" 
+F 0 "C11" V 7090 2550 50  0000 C CNN
+F 1 "10u" V 6999 2550 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7288 2400 50  0001 C CNN
+F 3 "~" H 7250 2550 50  0001 C CNN
+	1    7250 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F8D997
+P 7500 2550
+AR Path="/60FDBE21/6194D368/60F8D997" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60F8D997" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60F8D997" Ref="#PWR?"  Part="1" 
+AR Path="/60F8D997" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 7500 2300 50  0001 C CNN
+F 1 "GND" H 7505 2377 50  0000 C CNN
+F 2 "" H 7500 2550 50  0001 C CNN
+F 3 "" H 7500 2550 50  0001 C CNN
+	1    7500 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 60F918EB
+P 6850 3750
+F 0 "J3" H 6930 3742 50  0000 L CNN
+F 1 "RS232" H 6930 3651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6850 3750 50  0001 C CNN
+F 3 "~" H 6850 3750 50  0001 C CNN
+	1    6850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3650 6400 3650
+Wire Wire Line
+	6400 3650 6400 3500
+Wire Wire Line
+	6050 3500 6400 3500
+Wire Wire Line
+	6050 3700 6400 3700
+Wire Wire Line
+	6400 3700 6400 3750
+Wire Wire Line
+	6400 3750 6650 3750
+Wire Wire Line
+	6400 3900 6400 3850
+Wire Wire Line
+	6400 3850 6650 3850
+Wire Wire Line
+	6050 3900 6400 3900
+Wire Wire Line
+	6400 4100 6400 3950
+Wire Wire Line
+	6400 3950 6650 3950
+Wire Wire Line
+	6050 4100 6400 4100
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 60F96A27
+P 3650 3750
+F 0 "J2" H 3568 4067 50  0000 C CNN
+F 1 "TTL" H 3568 3976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3650 3750 50  0001 C CNN
+F 3 "~" H 3650 3750 50  0001 C CNN
+	1    3650 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3950 4100 3950
+Wire Wire Line
+	4100 3950 4100 4100
+Wire Wire Line
+	4450 4100 4100 4100
+Wire Wire Line
+	4450 3900 4100 3900
+Wire Wire Line
+	4100 3900 4100 3850
+Wire Wire Line
+	4100 3850 3850 3850
+Wire Wire Line
+	4100 3700 4100 3750
+Wire Wire Line
+	4100 3750 3850 3750
+Wire Wire Line
+	4450 3700 4100 3700
+Wire Wire Line
+	4100 3500 4100 3650
+Wire Wire Line
+	4100 3650 3850 3650
+Wire Wire Line
+	4450 3500 4100 3500
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 60F9DB14
+P 1950 2600
+F 0 "J1" H 2030 2592 50  0000 L CNN
+F 1 "Conn_01x02" H 2030 2501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1950 2600 50  0001 C CNN
+F 3 "~" H 1950 2600 50  0001 C CNN
+	1    1950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 60FA0D3A
+P 1100 3250
+F 0 "D1" H 1100 3033 50  0000 C CNN
+F 1 "D" H 1100 3124 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 1100 3250 50  0001 C CNN
+F 3 "~" H 1100 3250 50  0001 C CNN
+	1    1100 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60FA14B6
+P 850 3250
+AR Path="/60F821C4/60FA14B6" Ref="#PWR?"  Part="1" 
+AR Path="/60FA14B6" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 850 3100 50  0001 C CNN
+F 1 "+12V" V 865 3378 50  0000 L CNN
+F 2 "" H 850 3250 50  0001 C CNN
+F 3 "" H 850 3250 50  0001 C CNN
+	1    850  3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  3250 950  3250
+$Comp
+L Regulator_Linear:AMS1117-3.3 U1
+U 1 1 60FA2A9E
+P 2150 3250
+F 0 "U1" H 2150 3492 50  0000 C CNN
+F 1 "AMS1117-3.3" H 2150 3401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2150 3450 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2250 3000 50  0001 C CNN
+	1    2150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3750 1450 3650
+$Comp
+L Device:C C?
+U 1 1 60FA4C33
+P 1450 3500
+AR Path="/60FD392C/60FA4C33" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60FA4C33" Ref="C?"  Part="1" 
+AR Path="/61159961/60FA4C33" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60FA4C33" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60FA4C33" Ref="C?"  Part="1" 
+AR Path="/60FA4C33" Ref="C1"  Part="1" 
+F 0 "C1" V 1290 3500 50  0000 C CNN
+F 1 "10u" V 1199 3500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1206" H 1488 3350 50  0001 C CNN
+F 3 "~" H 1450 3500 50  0001 C CNN
+	1    1450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FA4C39
+P 1450 3750
+AR Path="/60FDBE21/6194D368/60FA4C39" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60FA4C39" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60FA4C39" Ref="#PWR?"  Part="1" 
+AR Path="/60FA4C39" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 1450 3500 50  0001 C CNN
+F 1 "GND" H 1455 3577 50  0000 C CNN
+F 2 "" H 1450 3750 50  0001 C CNN
+F 3 "" H 1450 3750 50  0001 C CNN
+	1    1450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FA7427
+P 1650 3750
+AR Path="/60FDBE21/6194D368/60FA7427" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60FA7427" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60FA7427" Ref="#PWR?"  Part="1" 
+AR Path="/60FA7427" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 1650 3500 50  0001 C CNN
+F 1 "GND" H 1655 3577 50  0000 C CNN
+F 2 "" H 1650 3750 50  0001 C CNN
+F 3 "" H 1650 3750 50  0001 C CNN
+	1    1650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3750 1650 3650
+$Comp
+L Device:C C?
+U 1 1 60FA742E
+P 1650 3500
+AR Path="/60FD392C/60FA742E" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60FA742E" Ref="C?"  Part="1" 
+AR Path="/61159961/60FA742E" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60FA742E" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60FA742E" Ref="C?"  Part="1" 
+AR Path="/60FA742E" Ref="C2"  Part="1" 
+F 0 "C2" V 1902 3500 50  0000 C CNN
+F 1 "100n" V 1811 3500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 1688 3350 50  0001 C CNN
+F 3 "~" H 1650 3500 50  0001 C CNN
+	1    1650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FA9C0D
+P 2150 3750
+AR Path="/60FDBE21/6194D368/60FA9C0D" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60FA9C0D" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60FA9C0D" Ref="#PWR?"  Part="1" 
+AR Path="/60FA9C0D" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 2150 3500 50  0001 C CNN
+F 1 "GND" H 2155 3577 50  0000 C CNN
+F 2 "" H 2150 3750 50  0001 C CNN
+F 3 "" H 2150 3750 50  0001 C CNN
+	1    2150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3250 1450 3250
+Wire Wire Line
+	1650 3350 1650 3250
+Connection ~ 1650 3250
+Wire Wire Line
+	1650 3250 1850 3250
+Wire Wire Line
+	1450 3350 1450 3250
+Connection ~ 1450 3250
+Wire Wire Line
+	1450 3250 1650 3250
+Wire Wire Line
+	2150 3750 2150 3550
+$Comp
+L power:GND #PWR?
+U 1 1 60FB26AA
+P 2650 3750
+AR Path="/60FDBE21/6194D368/60FB26AA" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60FB26AA" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60FB26AA" Ref="#PWR?"  Part="1" 
+AR Path="/60FB26AA" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 2650 3500 50  0001 C CNN
+F 1 "GND" H 2655 3577 50  0000 C CNN
+F 2 "" H 2650 3750 50  0001 C CNN
+F 3 "" H 2650 3750 50  0001 C CNN
+	1    2650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3750 2650 3650
+$Comp
+L Device:C C?
+U 1 1 60FB26B1
+P 2650 3500
+AR Path="/60FD392C/60FB26B1" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60FB26B1" Ref="C?"  Part="1" 
+AR Path="/61159961/60FB26B1" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60FB26B1" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60FB26B1" Ref="C?"  Part="1" 
+AR Path="/60FB26B1" Ref="C3"  Part="1" 
+F 0 "C3" H 2535 3546 50  0000 R CNN
+F 1 "100n" H 2535 3455 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H 2688 3350 50  0001 C CNN
+F 3 "~" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60FB35D5
+P 3000 3250
+AR Path="/60FDBE21/6194D368/60FB35D5" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60FB35D5" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60FB35D5" Ref="#PWR?"  Part="1" 
+AR Path="/60FB35D5" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 3000 3100 50  0001 C CNN
+F 1 "+3.3V" H 3015 3423 50  0000 C CNN
+F 2 "" H 3000 3250 50  0001 C CNN
+F 3 "" H 3000 3250 50  0001 C CNN
+	1    3000 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 3750 2900 3650
+$Comp
+L Device:C C?
+U 1 1 60FB53A4
+P 2900 3500
+AR Path="/60FD392C/60FB53A4" Ref="C?"  Part="1" 
+AR Path="/60FDE899/60FB53A4" Ref="C?"  Part="1" 
+AR Path="/61159961/60FB53A4" Ref="C?"  Part="1" 
+AR Path="/60FDBE21/60FB53A4" Ref="C?"  Part="1" 
+AR Path="/60F821C4/60FB53A4" Ref="C?"  Part="1" 
+AR Path="/60FB53A4" Ref="C4"  Part="1" 
+F 0 "C4" H 3015 3546 50  0000 L CNN
+F 1 "10u" H 3015 3455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2938 3350 50  0001 C CNN
+F 3 "~" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FB53AA
+P 2900 3750
+AR Path="/60FDBE21/6194D368/60FB53AA" Ref="#PWR?"  Part="1" 
+AR Path="/60FDBE21/60FB53AA" Ref="#PWR?"  Part="1" 
+AR Path="/60F821C4/60FB53AA" Ref="#PWR?"  Part="1" 
+AR Path="/60FB53AA" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 2900 3500 50  0001 C CNN
+F 1 "GND" H 2905 3577 50  0000 C CNN
+F 2 "" H 2900 3750 50  0001 C CNN
+F 3 "" H 2900 3750 50  0001 C CNN
+	1    2900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3250 2650 3250
+Wire Wire Line
+	2900 3350 2900 3250
+Connection ~ 2900 3250
+Wire Wire Line
+	2900 3250 3000 3250
+Wire Wire Line
+	2650 3350 2650 3250
+Connection ~ 2650 3250
+Wire Wire Line
+	2650 3250 2900 3250
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60FBD518
+P 900 950
+F 0 "H1" H 1000 996 50  0000 L CNN
+F 1 "MountingHole" H 1000 905 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 900 950 50  0001 C CNN
+F 3 "~" H 900 950 50  0001 C CNN
+	1    900  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60FBDECD
+P 900 1200
+F 0 "H2" H 1000 1246 50  0000 L CNN
+F 1 "MountingHole" H 1000 1155 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 900 1200 50  0001 C CNN
+F 3 "~" H 900 1200 50  0001 C CNN
+	1    900  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60FBF260
+P 900 1450
+F 0 "H3" H 1000 1496 50  0000 L CNN
+F 1 "MountingHole" H 1000 1405 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 900 1450 50  0001 C CNN
+F 3 "~" H 900 1450 50  0001 C CNN
+	1    900  1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60FC0741
+P 900 1700
+F 0 "H4" H 1000 1746 50  0000 L CNN
+F 1 "MountingHole" H 1000 1655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 900 1700 50  0001 C CNN
+F 3 "~" H 900 1700 50  0001 C CNN
+	1    900  1700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

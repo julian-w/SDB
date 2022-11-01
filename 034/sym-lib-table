@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name "PCA9535ECDTR2G")(type "KiCad")(uri "${KIPRJMOD}/symbols/PCA9535ECDTR2G.kicad_sym")(options "")(descr ""))
+  (lib (name "AFC07-S40ECC-00")(type "KiCad")(uri "${KIPRJMOD}/symbols/AFC07-S40ECC-00.kicad_sym")(options "")(descr ""))
+  (lib (name "796136-1")(type "KiCad")(uri "${KIPRJMOD}/symbols/796136-1.kicad_sym")(options "")(descr ""))
+  (lib (name "ADS1230")(type "KiCad")(uri "${KIPRJMOD}/symbols/ADS1230.kicad_sym")(options "")(descr ""))
+  (lib (name "SMS-404C")(type "KiCad")(uri "${KIPRJMOD}/symbols/SMS-404C.kicad_sym")(options "")(descr ""))
+  (lib (name "1862097")(type "KiCad")(uri "${KIPRJMOD}/symbols/1862097.kicad_sym")(options "")(descr ""))
+  (lib (name "DM3CS-SF")(type "KiCad")(uri "${KIPRJMOD}/symbols/DM3CS-SF.kicad_sym")(options "")(descr ""))
+  (lib (name "TYPE-C-31-M-12")(type "KiCad")(uri "${KIPRJMOD}/symbols/TYPE-C-31-M-12.kicad_sym")(options "")(descr ""))
+  (lib (name "MIC2981_82YWM")(type "KiCad")(uri "${KIPRJMOD}/symbols/MIC2981_82YWM.kicad_sym")(options "")(descr ""))
+)
